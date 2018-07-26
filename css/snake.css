@@ -1,0 +1,14 @@
+body {
+    background-color: #ff9933;
+}
+
+.back {
+    margin-top: 50px;
+    width: 100%;
+    margin: auto;
+}
+
+.game-board {
+    width: 500px;
+    height: 500px;
+}

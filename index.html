@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My first site">
+    <meta name="keywords" content="">
+    <meta name="distribution" content="global" />
+    <meta name="Allow-search" content="yes" />
+    <meta name="rating" content="general" />
+    <meta name="robots" content="index,follow,all" />
+    <title>This is my first page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="head-icon.png" />
+</head>
+
+<body id="body">
+    <script>
+        function setTimeMode() {
+
+            var currentTime = new Date();
+            var hours = currentTime.getHours();
+            if (hours >= 8 && hours <= 21) {
+                return;
+            } else {
+                var body = document.getElementById('body');
+                body.style.backgroundColor = '#2a353c';
+                body.style.color = 'white';
+            }
+
+        }
+
+        window.onload = setTimeMode;
+    </script>
+    <header>
+        <div id="nav-and-title" class="nav-and-title">
+            <div class="site-name">
+                <h1>
+                    <a href="#">The Page</a>
+                </h1>
+            </div>
+            <nav>
+                <div class="nav-bar">
+                    <ul class="main-bar">
+                        <li class="dropdown-button">
+                            <a id="menu1" href="#">car</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a id="menu1-submenu1" href="#">another car</a>
+                                </li>
+                                <li>
+                                    <a id="menu1-submenu2" href="#">another car</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-button">
+                            <a id="menu2" href="#">about</a>
+                            <ul class="dropdown-content">
+                                <li>
+                                    <a href="#">blue car</a>
+                                </li>
+                                <li>
+                                    <a href="#">red car</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="menu3" href="#">tests</a>
+                        </li>
+                        <li>
+                            <a id="menu4" href="#">sth</a>
+                        </li>
+                        <li>
+                            <a id="menu5" href="snake.html">Snake Game</a>
+                        </li>
+                        <li>
+                            <a id="menu6" href="#">contacts</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- <input type="text" id="search-form" class="search-form" placeholder="Search in site"> -->
+        </div>
+        <!-- <div id="display-search" class="display-search"></div> -->
+    </header>
+
+
+    <div id="main-content">
+        <div class="news-box">
+            <div class="first-ad-p">
+                <p id="news-title">Sofia stuff dont miss</p>
+            </div>
+            <div class="second-ad-p">
+                <p id="news-description">now you can be present before starting the course. Apply now.</p>
+            </div>
+            <div>
+                <a id="news-button" href="#" class="news-button box-button">Read more</a>
+            </div>
+        </div>
+
+        <div class="container-left">
+            <section class="main-box-left">
+                <img src="head-icon.png" alt="kurs image">
+            </section>
+            <aside class="info-left">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                    officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                    quas aut!
+                    <br>
+                    <div>
+                        <!--    <a href="#" class="box-button" target="_blank" title="link to google">Read more</a>  -->
+                        <button type="button" class="box-button" onclick="openHiddenContent(1,this)">Read more</button>
+                    </div>
+                </p>
+            </aside>
+        </div>
+
+        <div id="hidden-content1" class="hidden-content">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia
+                reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut!
+            </p>
+        </div>
+
+        <div class="container-right">
+            <section class="main-box-right">
+                <img src="bubbles-alt-icon.png" alt="kurs image">
+            </section>
+            <aside class="info-right">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                    officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                    quas aut!
+                    <br>
+                    <div>
+                        <!--    <a href="#" class="box-button" target="_blank" title="link to google">Read more</a>  -->
+                        <button type="button" class="box-button" onclick="openHiddenContent(2,this)">Read more</button>
+                    </div>
+                </p>
+            </aside>
+        </div>
+
+        <div id="hidden-content2" class="hidden-content">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia
+                reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut!
+            </p>
+        </div>
+
+        <div class="container-left">
+            <section class="main-box-left">
+                <img src="database-icon.png" alt="kurs image">
+            </section>
+            <aside class="info-left">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                    officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                    quas aut!
+                    <br>
+                    <div>
+                        <!--    <a href="#" class="box-button" target="_blank" title="link to google">Read more</a>  -->
+                        <button type="button" class="box-button" onclick="openHiddenContent(3,this)">Read more</button>
+                    </div>
+                </p>
+            </aside>
+        </div>
+
+        <div id="hidden-content3" class="hidden-content">
+            <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia
+                reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                quas aut!
+            </p>
+        </div>
+
+        <div class="background-container">
+            <div class="retain">
+                <div class="car-container">
+                    <a href="car1.jpg" target="_blank">
+                        <img src="car1.jpg">
+                    </a>
+                </div>
+            </div>
+            <div class="car-info-container">
+                <h2>Vehicle</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, vero ipsum natus dicta laborum iusto beatae
+                    enim asperiores.elit. Magni, vero ipsum natus dicta laborum iusto beatae enim asperiores.elit. Magni,
+                    vero ipsum natus dicta laborum iusto beatae enim asperiores.
+                </p>
+            </div>
+            <div class="retain">
+                <div class="car-container">
+                    <a href="car2.jpg" target="_blank">
+                        <img src="car2.jpg">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container">
+            <h1 id="good">Some other stuff</h1>
+            <div class="box-info">
+                <h2>Some heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                    officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                    quas aut!
+                    <br>
+                    <div>
+                        <!--    <a href="#" class="box-button" target="_blank" title="link to google">Read more</a>  -->
+                        <button type="button" class="box-button" onclick="openPopupContent(1)" onkeypress="closePopup(1)">Read more</button>
+                    </div>
+                </p>
+            </div>
+
+            <div id="popup-content1" class="popup-content">
+                <button type="button" class="fa fa-times fa-lg popup-close-btn" onclick="closePopup(1)"></button>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                    officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                    quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque
+                    labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error
+                    saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt,
+                    numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae
+                    nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                    quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur,
+                    vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque.
+                    Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione
+                    doloremque. Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat
+                    ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum
+                    nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia
+                    reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas
+                    aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                    dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe
+                    distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam
+                    atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla
+                    error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam
+                    incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur,
+                    vitae nulla error saepe distinctio quas aut!
+                </p>
+            </div>
+
+            <div class="box-info">
+                <h2>Some heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                    officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                    quas aut!
+                    <br>
+                    <div>
+                        <!--    <a href="#" class="box-button" target="_blank" title="link to google">Read more</a>  -->
+                        <button type="button" class="box-button" onclick="openPopupContent(2)" onkeypress="closePopup(2)">Read more</button>
+                    </div>
+                </p>
+            </div>
+
+            <div id="popup-content2" class="popup-content">
+                <button type="button" class="fa fa-times fa-lg popup-close-btn" onclick="closePopup(2)"></button>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                    officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                    quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque
+                    labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error
+                    saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt,
+                    numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae
+                    nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                    quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur,
+                    vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque.
+                    Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione
+                    doloremque. Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat
+                    ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum
+                    nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia
+                    reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas
+                    aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                    dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe
+                    distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam
+                    atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla
+                    error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam
+                    incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur,
+                    vitae nulla error saepe distinctio quas aut!
+                </p>
+            </div>
+            <div class="box-info">
+                <h2>Some heading</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                    officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                    quas aut!
+                    <br>
+                    <div>
+                        <!--    <a href="#" class="box-button" target="_blank" title="link to google">Read more</a>  -->
+                        <button type="button" class="box-button" onclick="openPopupContent(3)" onkeypress="closePopup(3)">Read more</button>
+                    </div>
+                </p>
+            </div>
+
+            <div id="popup-content3" class="popup-content">
+                <button type="button" class="fa fa-times fa-lg popup-close-btn" onclick="closePopup(3)"></button>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta
+                    officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio
+                    quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque
+                    labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error
+                    saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt,
+                    numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae
+                    nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                    quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur,
+                    vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque.
+                    Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione
+                    doloremque. Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat
+                    ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum dolor sit amet
+                    consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia reiciendis illum
+                    nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut! Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia
+                    reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas
+                    aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore
+                    dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe
+                    distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam
+                    atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla
+                    error saepe distinctio quas aut! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam
+                    incidunt, numquam atque labore dicta officia reiciendis illum nobis fugiat ratione doloremque. Consectetur,
+                    vitae nulla error saepe distinctio quas aut!
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="separator-line"></div>
+
+    <!--
+    <div class="b1">
+        <section>
+        </section>
+        <aside>
+
+        </aside>
+    </div>
+    <div class="b2">
+        
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia
+            reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut!
+            <br>
+            <a href="http://google.com" target="_blank" title="link to google">link to google</a>
+        </p>
+
+        <img src="kurs.jpg" alt="kurs image">
+    </div>
+    <div class="b3">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quam incidunt, numquam atque labore dicta officia
+            reiciendis illum nobis fugiat ratione doloremque. Consectetur, vitae nulla error saepe distinctio quas aut!
+            <br>
+            <a href="http://google.com" target="_blank" title="link to google">link to google</a>
+        </p>
+
+        <img src="kurs.jpg" alt="kurs image">
+    </div> -->
+    <!-- <ul>
+        <li>oine</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+
+    <form action="somefile" method="POST">
+        <div>
+            <lable>Name</lable>
+            <input type="text" name="name" placeholder="enter a name">
+        </div>
+        <div>
+            <lable>Choose sth</lable>
+            <select name="type">
+                <option value="blank"></option>
+                <option value="first">First</option>
+                <option value="second">Second</option>
+                <option value="third">Third</option>
+            </select>
+        </div>
+        <div>
+            <label>age</label>
+            <input type="number" name="date" value="30">
+        </div>
+        <div>
+            <lable>date</lable>
+            <input type="date" name="date">
+        </div>
+    </form>
+
+    <button>Clicks</button>
+    <br>
+    <img src="gh.png" alt="this should be js mocking image" width="300"> 
+
+    <div class="fast-color">
+        <div class="container">
+            <select class="box-button background-color-button" name="background" id="background" onchange="changeBackground(this)">
+                <option value="white">White(Dafult)</option>
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="orange">Orange</option>
+            </select>
+        </div>
+    </div>
+
+-->
+
+    <div class="footer">
+        <footer>
+            <div class="contact text-content">
+                <h1>Contacts</h1>
+                <div class="contacts">
+                    <i class="fa fa-4x fa-phone contact-icons"></i>
+                    <br>
+                    <h2>
+                        <a href="tel:123-123-123-1">123-123-123-1</a>
+                        <a href="tel:123-123-123-1">123-123-123-1</a>
+                    </h2>
+                </div>
+                <div class="contacts">
+                    <i class="fa fa-4x fa-envelope contact-icons"></i>
+                    <h2>sth@ath.com</h2>
+                </div>
+                <div class="contacts">
+                    <i class="fa fa-4x fa-github contact-icons"></i>
+                    <h2>
+                        <a href="#">github.com/sth</a>
+                    </h2>
+                </div>
+                <div class="contacts">
+                    <i class="fa fa-4x fa-linkedin contact-icons"></i>
+                    <h2>
+                        <a href="#">linkedin.com/sth</a>
+                    </h2>
+                </div>
+            </div>
+            <br>
+            <div class="copyright">
+                <p>Copyright &copy; the-dave-site.net 2018</p>
+            </div>
+        </footer>
+    </div>
+    <script type="text/javascript" src="js/main.js"></script>
+</body>
+
+</html>
