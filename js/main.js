@@ -6,7 +6,7 @@ function changeBackground(color) {
 //var searchBar = document.getElementById('search-form');
 
 //Add event listener
-searchBar.addEventListener('input', searchSite);
+//searchBar.addEventListener('input', searchSite);
 
 var sth = document.querySelector('.nav-and-title');
 var newElem = document.createElement('div');
