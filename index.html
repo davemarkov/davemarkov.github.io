@@ -36,54 +36,67 @@
         window.onload = setTimeMode;
     </script>
     <header>
-        <div id="nav-and-title" class="nav-and-title">
-            <div class="site-name">
-                <h1>
-                    <a href="#">The Page</a>
-                </h1>
-            </div>
-            <nav>
-                <div class="nav-bar">
-                    <ul class="main-bar">
-                        <li class="dropdown-button">
-                            <a id="menu1" href="#">car</a>
-                            <ul class="dropdown-content">
-                                <li>
-                                    <a id="menu1-submenu1" href="#">another car</a>
-                                </li>
-                                <li>
-                                    <a id="menu1-submenu2" href="#">another car</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="dropdown-button">
-                            <a id="menu2" href="#">about</a>
-                            <ul class="dropdown-content">
-                                <li>
-                                    <a href="#">blue car</a>
-                                </li>
-                                <li>
-                                    <a href="#">red car</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a id="menu3" href="#">tests</a>
-                        </li>
-                        <li>
-                            <a id="menu4" href="#">sth</a>
-                        </li>
-                        <li>
-                            <a id="menu5" href="snake.html">Snake Game</a>
-                        </li>
-                        <li>
-                            <a id="menu6" href="#">contacts</a>
-                        </li>
-                    </ul>
+        <div class="fixed-title-manu">
+            <h1 class="site-title">
+                <a href="index.html">the dave page</a>
+            </h1>
+            <div class="nav-menu">
+                <div class="dropdown">
+                    <div class="nav-button">
+                        <a href="snake.html">Snake Game</a>
+                    </div>
                 </div>
-            </nav>
-            <!-- <input type="text" id="search-form" class="search-form" placeholder="Search in site"> -->
+                <div class="dropdown">
+                    <div class="nav-button">
+                        <a href="#">another</a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">sub car3</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="nav-button">
+                        <a href="#cars">cars</a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">sub car3</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="nav-button">
+                        <a href="#">about</a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">sub car3</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="nav-button">
+                        <a href="#">interests</a>
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">sub car3</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                        <a href="#">sub car2</a>
+                    </div>
+                </div>
+            </div>
         </div>
+        <!-- <input type="text" id="search-form" class="search-form" placeholder="Search in site"> -->
         <!-- <div id="display-search" class="display-search"></div> -->
     </header>
 
@@ -440,40 +453,35 @@
 
 -->
 
-    <div class="footer">
-        <footer>
-            <div class="contact text-content">
-                <h1>Contacts</h1>
-                <div class="contacts">
+    <footer class="footer">
+        <div id="contact-info" class="contacts-bar">
+            <h1>Contacts</h1>
+            <div class="contacts">
+                <div class="contact">
                     <i class="fa fa-4x fa-phone contact-icons"></i>
-                    <br>
                     <h2>
-                        <a href="tel:123-123-123-1">123-123-123-1</a>
+                        <a href="tel:1234-567-8">1234-567-8</a>
                     </h2>
                 </div>
-                <div class="contacts">
+                <div class="contact">
                     <i class="fa fa-4x fa-envelope contact-icons"></i>
-                    <h2>sth@ath.com</h2>
+                    <h2>sthmail@sth.com</h2>
                 </div>
-                <div class="contacts">
+                <div class="contact">
                     <i class="fa fa-4x fa-github contact-icons"></i>
-                    <h2>
-                        <a href="#">github.com/sth</a>
-                    </h2>
+                    <h2>github/sth</h2>
                 </div>
-                <div class="contacts">
+                <div class="contact">
                     <i class="fa fa-4x fa-linkedin contact-icons"></i>
-                    <h2>
-                        <a href="#">linkedin.com/sth</a>
-                    </h2>
+                    <h2>linkedin/sth</h2>
                 </div>
             </div>
-            <br>
-            <div class="copyright">
-                <p>Copyright &copy; the-dave-site.net 2018</p>
-            </div>
-        </footer>
-    </div>
+        </div>
+        <div>
+            <h3 class="copyright">Copyright &copy; the page 2018</h3>
+        </div>
+    </footer>
+
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
